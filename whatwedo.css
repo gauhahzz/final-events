@@ -1,0 +1,191 @@
+.container11 {
+    width: 100%;
+    height: 50vh;
+    background-image: url('bgaaa.jpg');
+    position: relative;
+    left: 0;
+    z-index: -1;
+}
+
+.container11 #p11 {
+    position: absolute;
+    top: 10vh;
+    left: 4vw;
+    font-family: 'Comfortaa', cursive;
+    font-size: 6.5vw;
+    font-weight: 1000;
+    background: -webkit-linear-gradient(#000, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mycontentborder {
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    position: relative;
+}
+
+.bigbox11 {
+    width: 100%;
+    position: relative;
+    top: 10vh;
+    height: 95vh;
+    left: 5vh;
+    z-index: 1;
+    /* box-shadow: -10px -2px 10px black; */
+}
+
+.box111 {
+    width: 40vh;
+    height: 45vh;
+    position: relative;
+    box-shadow: 0px 5px 10px black;
+    padding: 5px;
+}
+
+.image {
+    position: relative;
+    top: 10px;
+    height: 35vh;
+    width: 100%;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px black;
+}
+
+.bigbox11 .mytext {
+    font-family: 'Gotu', sans-serif;
+    line-height: 1.1;
+    position: relative;
+    left: 1vh;
+    right: 1vh;
+    font-size: 4vh;
+    text-align: right;
+    color: #0f4c81;
+    margin: 7px;
+    padding: 15vh;
+    left: 0;
+}
+
+#quote11 {
+    position: absolute;
+    right: 10vh;
+    top: 10vh;
+    width: 25vh;
+    font-size: 3vh;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+.nav11 {
+    display: inline-flex;
+    position: absolute;
+    max-width: 33%;
+    background-color: #fff;
+    padding: 0 20px;
+    border-radius: 40px;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 5px 10px rgba(159, 162, 177, .8);
+}
+
+.nav-item11 {
+    color: #83818c;
+    padding: 0 20px;
+    text-decoration: none;
+    transition: .3s;
+    margin: 0 6px;
+    z-index: 1;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #dfe2ea;
+        border-radius: 8px 8px 0 0;
+        opacity: 0;
+        transition: .3s;
+    }
+}
+
+.nav-item11:not(.is-active):hover:before {
+    opacity: 1;
+    bottom: 0;
+}
+
+.nav-item11:not(.is-active):hover {
+    color: #333;
+}
+
+.nav-indicator11 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    transition: .4s;
+    height: 5px;
+    z-index: 1;
+    border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 580px) {
+    .nav11 {
+        overflow: auto;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url('bgaaa.jpg');
+}
+
+.mycontentborder {
+    background-image: url('gh.jpeg');
+    background-repeat: repeat-y;
+    background-size: 100% 110%;
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    bottom: 0;
+    background-color: #3a3535;
+    z-index: 1;
+}
+
+.footer p {
+    position: absolute;
+    top: 0vh;
+    padding: 0;
+    margin: 0;
+    top: 0.5vh;
+    left: 50%;
+    font-family: 'Source Code Pro', monospace;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.imgcontainer {
+    position: relative;
+}
+
+.imgcontainer img {
+    position: relative;
+    width: 2vw;
+    top: 5vh;
+    opacity: 0.5;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.imgcontainer img:hover {
+    opacity: 1;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="whatwedo.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa|Dancing+Script|Open+Sans+Condensed:300|Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+
+<body>
+
+    <div id="navback">
+        <nav class="nav11">
+            <a href="#" class="nav-item11" active-color="orange">Home</a>
+            <a href="#" class="nav-item11" active-color="green">About</a>
+            <a href="#" class="nav-item11  is-active" active-color="blue">Events</a>
+            <a href="#" class="nav-item11" active-color="rebeccapurple">Contact</a>
+            <span class="nav-indicator11"></span>
+        </nav>
+    </div>
+
+
+    <div class="container11">
+        <p id="p11">What we do?</p>
+        <p id="quote11">
+            " The purpose of education is to replace an empty mind with an open one. "
+        </p>
+    </div>
+    <div class="mycontentborder">
+
+        <div class="row  bigbox11">
+            <div>
+                <div class="col box111 l3 orange accent-3 ">
+                    <img src="scholar.png" alt="bachhe" class="image"></div>
+                <div class="mytext  ">We help the financially weak students not only by studies but also with scholarships and funds.</div>
+
+            </div> <br>
+            <div>
+                <div class="col box111 orange accent-3 l3"><img src="prize.png" alt="prize" class="image">
+
+                </div>
+                <div class="mytext">We maintain the balance between studies and development by organizing cultural workshops and fests</div>
+            </div>
+        </div>
+        <div class="row  bigbox11">
+            <div>
+                <div class="col l3 orange accent-3 box111"><img src="wrkshop.png" alt="workshop" class="image"></div>
+                <div class="mytext">We organize technical workshops for supplementing theory knowledge with practical.</div>
+            </div>
+
+            <div>
+                <div class="col l3 orange accent-3 box111"><img src="trip.png" alt="trip" class="image">
+
+                </div>
+                <div class="mytext" style="color: white;">We organize educational tours to museum and planetoriums.</div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright @2019</p>
+            <center>
+                <div class="imgcontainer">
+                    <a href="#"><img src="insta.png" alt="insta"></a>
+                    <a href="#"><img src="fb.png" alt="fb"></a>
+                    <a href="#"><img src="gmail.png" alt="utube"></a>
+                </div>
+            </center>
+        </div>
+    </div>
+
+
+    <script>
+        const indicator = document.querySelector('.nav-indicator11');
+        const items = document.querySelectorAll('.nav-item11');
+
+        function handleIndicator(el) {
+            items.forEach(item => {
+                item.classList.remove('is-active');
+                item.removeAttribute('style');
+            });
+
+            indicator.style.width = `${el.offsetWidth}px`;
+            indicator.style.left = `${el.offsetLeft}px`;
+            indicator.style.backgroundColor = el.getAttribute('active-color');
+
+            el.classList.add('is-active');
+            el.style.color = el.getAttribute('active-color');
+        }
+
+
+        items.forEach((item, index) => {
+            item.addEventListener('click', (e) => {
+                handleIndicator(e.target)
+            });
+            item.classList.contains('is-active') && handleIndicator(item);
+        });
+    </script>
+
+
+</body>
+
+</html>
