@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
 
@@ -38,29 +40,29 @@
 
         <div class="row  bigbox11">
             <div>
-                <div class="col box111 l3 orange accent-3 ">
+                <div class="col box111 l3 orange accent-3" data-aos="zoom-in-down">
                     <img src="scholar.png" alt="bachhe" class="image"></div>
-                <div class="mytext  ">We help the financially weak students not only by studies but also with scholarships and funds.</div>
+                <div class="mytext  " data-aos="fade-left">We help the financially weak students not only by studies but also with scholarships and funds.</div>
 
             </div> <br>
             <div>
-                <div class="col box111 orange accent-3 l3"><img src="prize.png" alt="prize" class="image">
+                <div class="col box111 orange accent-3 l3" data-aos="zoom-in-down"><img src="prize.png" alt="prize" class="image">
 
                 </div>
-                <div class="mytext">We maintain the balance between studies and development by organizing cultural workshops and fests</div>
+                <div class="mytext" data-aos="fade-left">We maintain the balance between studies and development by organizing cultural workshops and fests</div>
             </div>
         </div>
         <div class="row  bigbox11">
             <div>
-                <div class="col l3 orange accent-3 box111"><img src="wrkshop.png" alt="workshop" class="image"></div>
-                <div class="mytext">We organize technical workshops for supplementing theory knowledge with practical.</div>
+                <div class="col l3 orange accent-3 box111" data-aos="zoom-in-down"><img src="wrkshop.png" alt="workshop" class="image"></div>
+                <div class="mytext" data-aos="fade-left">We organize technical workshops for supplementing theory knowledge with practical.</div>
             </div>
 
             <div>
-                <div class="col l3 orange accent-3 box111"><img src="trip.png" alt="trip" class="image">
+                <div class="col l3 orange accent-3 box111" data-aos="zoom-in-down"><img src="trip.png" alt="trip" class="image">
 
                 </div>
-                <div class="mytext" style="color: white;">We organize educational tours to museum and planetoriums.</div>
+                <div class="mytext" data-aos="fade-left" style="color: white;">We organize educational tours to museum and planetoriums.</div>
             </div>
         </div>
         <div class="footer">
@@ -77,6 +79,9 @@
 
 
     <script>
+        AOS.init({
+            duration: 1200
+        });
         const indicator = document.querySelector('.nav-indicator11');
         const items = document.querySelectorAll('.nav-item11');
 
